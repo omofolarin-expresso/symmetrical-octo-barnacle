@@ -20,7 +20,7 @@ const withValidation = (Wrapped, validators) => {
         }
 
         render() {
-            return <Wrapped validateOnChange={this.validateOnChange} errors={this.state.errors}/>;
+            return <Wrapped {...this.props} validateOnChange={this.validateOnChange} errors={this.state.errors}/>;
         }
     }
 };

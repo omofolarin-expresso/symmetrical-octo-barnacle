@@ -27,7 +27,7 @@ const withFetching = (Wrapped, Loading, loader) => {
         }
 
         render() {
-            return this.state.loading ? <Loading /> : <Wrapped payload={this.state.payload} reload={this.reload} />;
+            return this.state.loading ? <Loading /> : <Wrapped {...this.props} payload={this.state.payload} reload={this.reload} />;
         }
     }
 };
