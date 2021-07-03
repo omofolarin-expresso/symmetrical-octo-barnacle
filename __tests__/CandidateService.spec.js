@@ -43,7 +43,10 @@ describe('Candidate Service', () => {
         name: 'Jan',
         surname: 'Kowalski',
         id: '1',
-        avatarUrl: 'avatar_url_1'
+        email: 'jan.kowalski@gmail.com',
+        avatarUrl: 'avatar_url_1',
+        country: 'Poland',
+        city: 'Poznan'
       }
     ]);
 
@@ -52,13 +55,19 @@ describe('Candidate Service', () => {
         name: 'Jan',
         surname: 'Kowalski',
         id: '1',
-        avatarUrl: 'avatar_url_1'
+        avatarUrl: 'avatar_url_1',
+        email: 'jan.kowalski@gmail.com',
+        country: 'Poland',
+        city: 'Poznan'
       },
       {
         name: 'Adam',
         surname: 'Nowak',
         avatarUrl: 'avatar_url_2',
-        id: '2'
+        id: '2',
+        email: 'adam.nowak@gmail.com',
+        country: 'Poland',
+        city: 'Warsaw'
       }
     ]);
   });
@@ -106,13 +115,19 @@ describe('Candidate Service', () => {
         name: 'Jan',
         surname: 'Kowalski',
         id: '1',
-        avatarUrl: 'avatar_url_1'
+        avatarUrl: 'avatar_url_1',
+        email: 'jan.kowalski@gmail.com',
+        country: 'Poland',
+        city: 'Poznan'
       },
       {
         id: '2',
         name: 'Adamus',
         surname: 'Nowakus',
-        avatarUrl: 'avatar_url_3'
+        avatarUrl: 'avatar_url_3',
+        email: 'adamus.nowakus@gmail.com',
+        country: 'France',
+        city: 'Paris'
       }
     ]);
   });
@@ -182,7 +197,10 @@ describe('Candidate Service', () => {
         id: '2',
         name: 'Adam',
         surname: 'Nowak',
-        avatarUrl: 'avatar_url_2'
+        email: 'adam.nowak@gmail.com',
+        avatarUrl: 'avatar_url_2',
+        country: 'Poland',
+        city: 'Warsaw'
       }
     ]);
 
