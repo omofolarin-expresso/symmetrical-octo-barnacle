@@ -15,7 +15,7 @@ const withFetching = (Wrapped, Loading, loader) => {
         }
 
         loadData = async () => {
-            const payload = await loader();
+            const payload = await loader(this.props);
             this.setState({
                 loading: false,
                 payload,
@@ -27,7 +27,7 @@ const withFetching = (Wrapped, Loading, loader) => {
         }
 
         render() {
-            return this.state.loading ? <Loading /> : <Wrapped {...this.props} payload={this.state.payload} reload={this.reload} />;
+            return this.state.loading ? <Loading {...this.props.loadingProps} /> : <Wrapped {...this.props} payload={this.state.payload} reload={this.reload} />;
         }
     }
 };

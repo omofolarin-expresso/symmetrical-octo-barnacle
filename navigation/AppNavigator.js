@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import CandidatesListScreen from '../screens/CandidatesListsScreen';
 import CandidateProfileScreenWithLoading from '../screens/CandidateProfileScreenWithLoading';
@@ -18,7 +19,7 @@ const CandidatesStack = createStackNavigator({
       }
     }) => ({
       title: 'Candidates',
-      headerRight: <Button onPress={() => navigate('Modal', params)} title="Add" color="#000" />
+      headerRight: () => <Button onPress={() => navigate('Modal', params)} title="Add" color="#000" />
     })
   },
   CandidateProfile: {
@@ -35,7 +36,7 @@ const CandidatesStack = createStackNavigator({
       }
     }) => ({
       title: 'Profile',
-      headerRight: <Button onPress={() => navigate('Modal', params)} title="Edit" color="#000" />
+      headerRight: () => <Button onPress={() => navigate('Modal', params)} title="Edit" color="#000" />
     })
   }
 });

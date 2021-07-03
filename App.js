@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 import {
   Platform, StatusBar, StyleSheet, View
 } from 'react-native';
