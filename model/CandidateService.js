@@ -15,7 +15,18 @@ class CandidateService {
     id, name, surname, email, city, country, avatarUrl
   }) => {};
 
-  removeCandidate = async (id) => {};
+  removeCandidate = async (id) => {
+    const remainingCandidates = this.candidates.filter(candidate => id !== candidate.id);
+    this.candidates = remainingCandidates
+    const candidatesToReturn = []
+    remainingCandidates.forEach(candidate => candidatesToReturn.push({
+      name: candidate.name,
+      surname: candidate.surname,
+      id: candidate.id,
+      avatarUrl: candidate.avatarUrl
+    }))
+    return candidatesToReturn
+  }
 
   fetchCandidates = async () => {
     const candidatesToReturn = []
