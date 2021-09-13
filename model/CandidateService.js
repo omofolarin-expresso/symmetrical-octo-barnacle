@@ -11,9 +11,12 @@ class CandidateService {
     return ({name, surname, email, city, country, avatarUrl, id: String(this.candidates.length)})
   };
 
-  updateCandidate = async ({
+  updateCandidate = async (update = {
     id, name, surname, email, city, country, avatarUrl
-  }) => {};
+  }) => {
+    this.candidates.splice(Number(update.id) - 1, 1, update)
+    return update
+  };
 
   removeCandidate = async (id) => {
     const remainingCandidates = this.candidates.filter(candidate => id !== candidate.id);
