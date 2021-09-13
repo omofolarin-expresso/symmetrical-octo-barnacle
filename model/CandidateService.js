@@ -19,7 +19,6 @@ class CandidateService {
 
   fetchCandidates = async () => {
     const candidatesToReturn = []
-    console.log('candidates: ', this.candidates)
     this.candidates.forEach(candidate => candidatesToReturn.push({
       name: candidate.name,
       surname: candidate.surname,
@@ -29,7 +28,7 @@ class CandidateService {
     return candidatesToReturn
   };
 
-  fetchDetails = async id => ({});
+  fetchDetails = async id => this.candidates.filter(candidate => id === candidate.id)[0];
 }
 
 export default CandidateService;
