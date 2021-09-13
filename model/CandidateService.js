@@ -6,7 +6,10 @@ class CandidateService {
 
   addCandidate = async ({
     name, surname, email, city, country, avatarUrl
-  }) => {};
+  }) => {
+    this.candidates.push({ name, surname, email, city, country, avatarUrl })
+    return ({name, surname, email, city, country, avatarUrl})
+  };
 
   updateCandidate = async ({
     id, name, surname, email, city, country, avatarUrl
