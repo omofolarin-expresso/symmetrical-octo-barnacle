@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="15" failures="14" time="5.78">
-  <testsuite name="CandidateTextInput" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:01:22" time="2.872" tests="3">
-    <testcase classname="CandidateTextInput" name="does not render additional views when there are no errors" time="0.022">
+<testsuites name="jest tests" tests="15" failures="13" time="6.252">
+  <testsuite name="CandidateTextInput" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:26:13" time="3.034" tests="3">
+    <testcase classname="CandidateTextInput" name="does not render additional views when there are no errors" time="0.02">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
     at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
@@ -14,7 +14,7 @@
     at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
     </testcase>
-    <testcase classname="CandidateTextInput" name="render list of errors when errors are present" time="0.001">
+    <testcase classname="CandidateTextInput" name="render list of errors when errors are present" time="0.019">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
     at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
@@ -27,7 +27,7 @@
     at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
     </testcase>
-    <testcase classname="CandidateTextInput" name="rendered errors have unique keys" time="0.001">
+    <testcase classname="CandidateTextInput" name="rendered errors have unique keys" time="0.002">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
     at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
@@ -41,147 +41,7 @@
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
     </testcase>
   </testsuite>
-  <testsuite name="withValidation HOC" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:01:25" time="0.302" tests="3">
-    <testcase classname="withValidation HOC" name="passes validateOnChange as a prop to validate changing input" time="0.004">
-      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
-    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
-    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
-    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
-    at _callee$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:16:39)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
-    </testcase>
-    <testcase classname="withValidation HOC" name="passes list of errors after validation" time="0.001">
-      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
-    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
-    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
-    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
-    at _callee2$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:27:39)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
-    </testcase>
-    <testcase classname="withValidation HOC" name="notifies of changing input along with validation status" time="0.001">
-      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
-    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
-    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
-    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
-    at _callee3$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:46:39)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="Candidate Service" errors="0" failures="4" skipped="0" timestamp="2021-09-13T16:01:22" time="3.918" tests="5">
-    <testcase classname="Candidate Service" name="initially has no candidates" time="0.021">
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to add new candidate and returns it in response" time="0.01">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected
-+ Received
-
-  Object {
-    &quot;avatarUrl&quot;: &quot;avatar_url_1&quot;,
-    &quot;city&quot;: &quot;Poznan&quot;,
-    &quot;country&quot;: &quot;Poland&quot;,
-    &quot;email&quot;: &quot;jan.kowalski@gmail.com&quot;,
--   &quot;id&quot;: &quot;1&quot;,
-    &quot;name&quot;: &quot;Jan&quot;,
-    &quot;surname&quot;: &quot;Kowalski&quot;,
-  }
-    at _callee2$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:39:33)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
-    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
-    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to update candidate and returns it in response" time="0.016">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: {&quot;avatarUrl&quot;: &quot;avatar_url_3&quot;, &quot;city&quot;: &quot;Paris&quot;, &quot;country&quot;: &quot;France&quot;, &quot;email&quot;: &quot;adamus.nowakus@gmail.com&quot;, &quot;id&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Adamus&quot;, &quot;surname&quot;: &quot;Nowakus&quot;}
-Received: undefined
-    at _callee3$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:102:36)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
-    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
-    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to fetch candidate details" time="0.003">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected
-+ Received
-
-- Object {
--   &quot;avatarUrl&quot;: &quot;avatar_url_1&quot;,
--   &quot;city&quot;: &quot;Poznan&quot;,
--   &quot;country&quot;: &quot;Poland&quot;,
--   &quot;email&quot;: &quot;jan.kowalski@gmail.com&quot;,
--   &quot;id&quot;: &quot;1&quot;,
--   &quot;name&quot;: &quot;Jan&quot;,
--   &quot;surname&quot;: &quot;Kowalski&quot;,
-- }
-+ Object {}
-    at _callee4$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:147:35)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
-    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
-    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to remove candidates" time="0.002">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected
-+ Received
-
-- Array [
--   Object {
--     &quot;avatarUrl&quot;: &quot;avatar_url_2&quot;,
--     &quot;id&quot;: &quot;2&quot;,
--     &quot;name&quot;: &quot;Adam&quot;,
--     &quot;surname&quot;: &quot;Nowak&quot;,
--   },
-- ]
-+ Array []
-    at _callee5$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:180:41)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
-    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
-    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
-    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
-    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
-    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="withFetching HOC" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:01:26" time="0.516" tests="3">
+  <testsuite name="withFetching HOC" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:26:16" time="0.262" tests="3">
     <testcase classname="withFetching HOC" name="renders loading component while data is loading" time="0.004">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
@@ -195,7 +55,7 @@ Received: undefined
     at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
     </testcase>
-    <testcase classname="withFetching HOC" name="renders main component with loaded data after data is loaded" time="0.009">
+    <testcase classname="withFetching HOC" name="renders main component with loaded data after data is loaded" time="0.001">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
     at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
@@ -222,8 +82,129 @@ Received: undefined
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
     </testcase>
   </testsuite>
-  <testsuite name="CandidateProfileScreen" errors="0" failures="1" skipped="0" timestamp="2021-09-13T16:01:22" time="4.186" tests="1">
-    <testcase classname="CandidateProfileScreen" name="renders correctly" time="0.007">
+  <testsuite name="withValidation HOC" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:26:17" time="0.202" tests="3">
+    <testcase classname="withValidation HOC" name="passes validateOnChange as a prop to validate changing input" time="0.006">
+      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
+    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
+    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
+    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+    at _callee$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:16:39)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
+    </testcase>
+    <testcase classname="withValidation HOC" name="passes list of errors after validation" time="0.002">
+      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
+    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
+    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
+    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+    at _callee2$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:27:39)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
+    </testcase>
+    <testcase classname="withValidation HOC" name="notifies of changing input along with validation status" time="0">
+      <failure>TypeError: Cannot read property &apos;current&apos; of undefined
+    at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
+    at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
+    at Object.create (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:15455:5)
+    at _callee3$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withValidation.spec.js:46:39)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:190:11</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Candidate Service" errors="0" failures="3" skipped="0" timestamp="2021-09-13T16:26:13" time="4.32" tests="5">
+    <testcase classname="Candidate Service" name="initially has no candidates" time="0.016">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to add new candidate and returns it in response" time="0.012">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to update candidate and returns it in response" time="0.011">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: {&quot;avatarUrl&quot;: &quot;avatar_url_3&quot;, &quot;city&quot;: &quot;Paris&quot;, &quot;country&quot;: &quot;France&quot;, &quot;email&quot;: &quot;adamus.nowakus@gmail.com&quot;, &quot;id&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Adamus&quot;, &quot;surname&quot;: &quot;Nowakus&quot;}
+Received: undefined
+    at _callee3$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:102:36)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
+    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to fetch candidate details" time="0.01">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+- Object {
+-   &quot;avatarUrl&quot;: &quot;avatar_url_1&quot;,
+-   &quot;city&quot;: &quot;Poznan&quot;,
+-   &quot;country&quot;: &quot;Poland&quot;,
+-   &quot;email&quot;: &quot;jan.kowalski@gmail.com&quot;,
+-   &quot;id&quot;: &quot;1&quot;,
+-   &quot;name&quot;: &quot;Jan&quot;,
+-   &quot;surname&quot;: &quot;Kowalski&quot;,
+- }
++ Object {}
+    at _callee4$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:147:35)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
+    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to remove candidates" time="0.006">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+@@ -1,7 +1,13 @@
+  Array [
+    Object {
++     &quot;avatarUrl&quot;: &quot;avatar_url_1&quot;,
++     &quot;id&quot;: &quot;1&quot;,
++     &quot;name&quot;: &quot;Jan&quot;,
++     &quot;surname&quot;: &quot;Kowalski&quot;,
++   },
++   Object {
+      &quot;avatarUrl&quot;: &quot;avatar_url_2&quot;,
+      &quot;id&quot;: &quot;2&quot;,
+      &quot;name&quot;: &quot;Adam&quot;,
+      &quot;surname&quot;: &quot;Nowak&quot;,
+    },
+    at _callee5$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateService.spec.js:180:41)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:294:22)
+    at Generator.next (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:119:21)
+    at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
+    at invoke (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:155:20)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:165:13
+    at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
+    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CandidateProfileScreen" errors="0" failures="1" skipped="0" timestamp="2021-09-13T16:26:13" time="4.607" tests="1">
+    <testcase classname="CandidateProfileScreen" name="renders correctly" time="0.014">
       <failure>TypeError: Cannot read property &apos;current&apos; of undefined
     at warnIfNotScopedWithMatchingAct (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:13713:31)
     at updateContainer (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/react-test-renderer/cjs/react-test-renderer.development.js:14706:7)
