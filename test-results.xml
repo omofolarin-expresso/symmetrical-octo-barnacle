@@ -1,243 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="15" failures="3" time="6.097">
-  <testsuite name="CandidateProfileScreen" errors="0" failures="1" skipped="0" timestamp="2021-09-14T08:39:00" time="3.689" tests="1">
-    <testcase classname="CandidateProfileScreen" name="renders correctly" time="0.459">
-      <failure>Error: expect(received).toMatchSnapshot()
-
-Snapshot name: `CandidateProfileScreen renders correctly 1`
-
-- Snapshot
-+ Received
-
-@@ -31,185 +31,8 @@
-            &quot;width&quot;: 150,
-          }
-        }
-      /&gt;
-    &lt;/View&gt;
--   &lt;View
--     style={Object {}}
--   &gt;
--     &lt;View
--       style={
--         Object {
--           &quot;alignItems&quot;: &quot;center&quot;,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Personal
--       &lt;/Text&gt;
--     &lt;/View&gt;
--     &lt;View
--       style={
--         Object {
--           &quot;padding&quot;: 8,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 12,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Name:
--       &lt;/Text&gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--           }
--         }
--       &gt;
--         Jan
--       &lt;/Text&gt;
--     &lt;/View&gt;
--     &lt;View
--       style={
--         Object {
--           &quot;padding&quot;: 8,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 12,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Surname:
--       &lt;/Text&gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--           }
--         }
--       &gt;
--         Kowalski
--       &lt;/Text&gt;
--     &lt;/View&gt;
--   &lt;/View&gt;
--   &lt;View
--     style={Object {}}
--   &gt;
--     &lt;View
--       style={
--         Object {
--           &quot;alignItems&quot;: &quot;center&quot;,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Contact
--       &lt;/Text&gt;
--     &lt;/View&gt;
--     &lt;View
--       style={
--         Object {
--           &quot;padding&quot;: 8,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 12,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Email:
--       &lt;/Text&gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--           }
--         }
--       &gt;
--         jk@m.com
--       &lt;/Text&gt;
--     &lt;/View&gt;
--     &lt;View
--       style={
--         Object {
--           &quot;padding&quot;: 8,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 12,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         City:
--       &lt;/Text&gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--           }
--         }
--       &gt;
--         Poznan
--       &lt;/Text&gt;
--     &lt;/View&gt;
--     &lt;View
--       style={
--         Object {
--           &quot;padding&quot;: 8,
--         }
--       }
--     &gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 12,
--             &quot;fontWeight&quot;: &quot;bold&quot;,
--           }
--         }
--       &gt;
--         Country:
--       &lt;/Text&gt;
--       &lt;Text
--         style={
--           Object {
--             &quot;fontSize&quot;: 18,
--           }
--         }
--       &gt;
--         Poland
--       &lt;/Text&gt;
--     &lt;/View&gt;
--   &lt;/View&gt;
-+   &lt;View /&gt;
-+   &lt;View /&gt;
-  &lt;/View&gt;
-    at Object.&lt;anonymous&gt; (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/CandidateProfileScreen.spec.js:18:18)
-    at Object.asyncJestTest (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:43:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
-    at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:73:41
-    at processTicksAndRejections (node:internal/process/task_queues:94:5)</failure>
+<testsuites name="jest tests" tests="15" failures="2" time="4.823">
+  <testsuite name="withFetching HOC" errors="0" failures="2" skipped="0" timestamp="2021-09-14T10:30:55" time="2.501" tests="3">
+    <testcase classname="withFetching HOC" name="renders loading component while data is loading" time="0.249">
     </testcase>
-  </testsuite>
-  <testsuite name="CandidateTextInput" errors="0" failures="0" skipped="0" timestamp="2021-09-14T08:39:00" time="3.841" tests="3">
-    <testcase classname="CandidateTextInput" name="does not render additional views when there are no errors" time="0.591">
-    </testcase>
-    <testcase classname="CandidateTextInput" name="render list of errors when errors are present" time="0.017">
-    </testcase>
-    <testcase classname="CandidateTextInput" name="rendered errors have unique keys" time="0.028">
-    </testcase>
-  </testsuite>
-  <testsuite name="withValidation HOC" errors="0" failures="0" skipped="0" timestamp="2021-09-14T08:39:04" time="0.45" tests="3">
-    <testcase classname="withValidation HOC" name="passes validateOnChange as a prop to validate changing input" time="0.116">
-    </testcase>
-    <testcase classname="withValidation HOC" name="passes list of errors after validation" time="0.003">
-    </testcase>
-    <testcase classname="withValidation HOC" name="notifies of changing input along with validation status" time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="Candidate Service" errors="0" failures="0" skipped="0" timestamp="2021-09-14T08:39:04" time="0.408" tests="5">
-    <testcase classname="Candidate Service" name="initially has no candidates" time="0.001">
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to add new candidate and returns it in response" time="0.06">
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to update candidate and returns it in response" time="0.001">
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to fetch candidate details" time="0.001">
-    </testcase>
-    <testcase classname="Candidate Service" name="allows to remove candidates" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="withFetching HOC" errors="0" failures="2" skipped="0" timestamp="2021-09-14T08:39:00" time="4.374" tests="3">
-    <testcase classname="withFetching HOC" name="renders loading component while data is loading" time="0.264">
-    </testcase>
-    <testcase classname="withFetching HOC" name="renders main component with loaded data after data is loaded" time="0.015">
+    <testcase classname="withFetching HOC" name="renders main component with loaded data after data is loaded" time="0.013">
       <failure>Error: expect(received).toHaveLength(expected)
 
 Expected length: 0
@@ -254,7 +20,7 @@ Received array:  [{&quot;_fiber&quot;: {&quot;_debugID&quot;: 11, &quot;_debugIs
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
     at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
     </testcase>
-    <testcase classname="withFetching HOC" name="passes reload prop to allow a child to load the data again" time="0.061">
+    <testcase classname="withFetching HOC" name="passes reload prop to allow a child to load the data again" time="0.007">
       <failure>TypeError: Cannot read property &apos;props&apos; of undefined
     at _callee3$ (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/__tests__/withFetching.spec.js:60:33)
     at tryCatch (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:63:40)
@@ -266,6 +32,38 @@ Received array:  [{&quot;_fiber&quot;: {&quot;_debugID&quot;: 11, &quot;_debugIs
     at tryCallOne (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:37:12)
     at /Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/promise/lib/core.js:123:15
     at flush (/Users/klaz/Documents/programs/symmetrical-octo-barnacle/node_modules/asap/raw.js:50:29)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="CandidateTextInput" errors="0" failures="0" skipped="0" timestamp="2021-09-14T10:30:55" time="2.933" tests="3">
+    <testcase classname="CandidateTextInput" name="does not render additional views when there are no errors" time="0.507">
+    </testcase>
+    <testcase classname="CandidateTextInput" name="render list of errors when errors are present" time="0.006">
+    </testcase>
+    <testcase classname="CandidateTextInput" name="rendered errors have unique keys" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="withValidation HOC" errors="0" failures="0" skipped="0" timestamp="2021-09-14T10:30:58" time="0.369" tests="3">
+    <testcase classname="withValidation HOC" name="passes validateOnChange as a prop to validate changing input" time="0.085">
+    </testcase>
+    <testcase classname="withValidation HOC" name="passes list of errors after validation" time="0.003">
+    </testcase>
+    <testcase classname="withValidation HOC" name="notifies of changing input along with validation status" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Candidate Service" errors="0" failures="0" skipped="0" timestamp="2021-09-14T10:30:58" time="0.223" tests="5">
+    <testcase classname="Candidate Service" name="initially has no candidates" time="0.003">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to add new candidate and returns it in response" time="0.002">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to update candidate and returns it in response" time="0.001">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to fetch candidate details" time="0.001">
+    </testcase>
+    <testcase classname="Candidate Service" name="allows to remove candidates" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="CandidateProfileScreen" errors="0" failures="0" skipped="0" timestamp="2021-09-14T10:30:55" time="3.456" tests="1">
+    <testcase classname="CandidateProfileScreen" name="renders correctly" time="0.26">
     </testcase>
   </testsuite>
 </testsuites>
