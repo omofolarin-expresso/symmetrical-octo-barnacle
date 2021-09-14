@@ -22,8 +22,8 @@
     "expo": "^42.0.0",
     "react": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-navigation": "^3.13.0",
-    "react-native-gesture-handler": "~1.10.2"
+    "react-native-gesture-handler": "~1.10.2",
+    "react-navigation": "^3.13.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
