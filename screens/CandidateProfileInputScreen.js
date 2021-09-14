@@ -116,10 +116,10 @@ class CandidateProfileInputScreen extends React.PureComponent {
         </View>
         <ScrollView>
           <NameInput label="Name" value={name} onChanged={this.onNameChanged} />
-          {/* <SurnameInput label="Surname" value={surname} onChanged={this.onSurnameChanged} />
+          <SurnameInput label="Surname" value={surname} onChanged={this.onSurnameChanged} />
           <EmailInput label="Email" value={email} onChanged={this.onEmailChanged} />
           <CityInput label="City" value={city} onChanged={this.onCityChanged} />
-          <CountryInput label="Country" value={country} onChanged={this.onCountryChanged} /> */}
+          <CountryInput label="Country" value={country} onChanged={this.onCountryChanged} />
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.submitButton} onPress={this.onSubmitPressed}>
               <Text style={styles.submitButtonText}>Submit</Text>
