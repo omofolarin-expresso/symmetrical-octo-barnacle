@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 
 let error = []
 const withValidation = (Wrapped, validators) => (props) => {
@@ -21,7 +20,6 @@ const withValidation = (Wrapped, validators) => (props) => {
                 validateOnChange={(text) => props.onChanged(text, validate(text))}
                 errors={error}
             />
-            {!!error.length && <Text style={{color: 'red'}}>{error[0]}</Text>}
         </>
     )
 };
