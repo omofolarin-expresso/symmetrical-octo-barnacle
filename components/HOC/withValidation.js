@@ -1,30 +1,28 @@
 import React from 'react';
 import { Text } from 'react-native';
 
+let error = []
 const withValidation = (Wrapped, validators) => (props) => {
-    const errors = []
-    for (let i = 0; i < validators.length; i++) {
-        if (!validators[i](props.value).isValid) {
-            errors.push(validators[i](props.value).message)
-            return (
-                <>
-                    <Wrapped
-                        {...props}
-                        isValid={validators[i](props.value).isValid}
-                        validateOnChange={props.onChanged}
-                        errors={errors}
-                    />
-                    {!!props.value.length && <Text style={{color: 'red'}}>{validators[i](props.value).message}</Text>}
-                </>
-            )
-        } 
+    const validate = (input) => {
+        for (let i = 0; i < validators.length; i++) {
+            if (!validators[i](input).isValid) {
+                error[0] = validators[i](input).message
+                return false
+            }
+        }
+        error.length = 0
+        return true
     }
+
     return (
-        <Wrapped
-            {...props} isValid={true}
-            validateOnChange={props.onChanged}
-            errors={errors}
-        />
+        <>
+            <Wrapped
+                {...props}
+                validateOnChange={(text) => props.onChanged(text, validate(text))}
+                errors={error}
+            />
+            {!!error.length && <Text style={{color: 'red'}}>{error[0]}</Text>}
+        </>
     )
 };
 
