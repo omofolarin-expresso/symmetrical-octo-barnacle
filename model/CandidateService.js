@@ -6,17 +6,36 @@ class CandidateService {
 
   addCandidate = async ({
     name, surname, email, city, country, avatarUrl
-  }) => {};
+  }) => {
+    const candidate = {id: `${this.candidates.length + 1}`, name, surname, email, city, country, avatarUrl}
+    this.candidates.push(candidate)
+    return candidate
+  };
 
   updateCandidate = async ({
     id, name, surname, email, city, country, avatarUrl
-  }) => {};
+  }) => {
+    const c = {
+      id, name, surname, email, city, country, avatarUrl
+    }
+    const candidateIndex = this.candidates.findIndex((curr) => curr.id === c.id)
+    this.candidates.splice(candidateIndex, 1, c)
+    return this.candidates[candidateIndex]
+  };
 
-  removeCandidate = async (id) => {};
+  removeCandidate = async (id) => {
+    const candidateIndex = this.candidates.findIndex((curr) => curr.id === id)
+    return this.candidates.splice(candidateIndex, 1)
+  };
 
-  fetchCandidates = async () => [];
+  fetchCandidates = async () => {
+    return this.candidates.slice()
+  };
 
-  fetchDetails = async id => ({});
+  fetchDetails = async id => {
+    const candidateIndex = this.candidates.findIndex((curr) => curr.id === id)
+    return this.candidates[candidateIndex]
+  };
 }
 
 export default CandidateService;
