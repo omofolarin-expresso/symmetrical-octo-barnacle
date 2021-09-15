@@ -39,27 +39,12 @@ describe('Candidate Service', () => {
     expect(firstAddedCandidate).toEqual({ id: '1', ...firstCandidate });
     expect(secondAddedCandidate).toEqual({ id: '2', ...secondCandidate });
     expect(candidatesAfterFirstAddition).toEqual([
-      {
-        name: 'Jan',
-        surname: 'Kowalski',
-        id: '1',
-        avatarUrl: 'avatar_url_1'
-      }
+      { id: '1', ...firstCandidate }
     ]);
 
     expect(candidatesAfterSecondAddition).toEqual([
-      {
-        name: 'Jan',
-        surname: 'Kowalski',
-        id: '1',
-        avatarUrl: 'avatar_url_1'
-      },
-      {
-        name: 'Adam',
-        surname: 'Nowak',
-        avatarUrl: 'avatar_url_2',
-        id: '2'
-      }
+      { id: '1', ...firstCandidate },
+      { id: '2', ...secondCandidate }
     ]);
   });
 
@@ -186,9 +171,7 @@ describe('Candidate Service', () => {
     expect(candidatesAfterFirstRemoval).toEqual([
       {
         id: '2',
-        name: 'Adam',
-        surname: 'Nowak',
-        avatarUrl: 'avatar_url_2'
+        ...secondCandidate
       }
     ]);
 
