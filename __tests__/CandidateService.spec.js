@@ -103,16 +103,22 @@ describe('Candidate Service', () => {
 
     expect(candidatesAfterUpdate).toEqual([
       {
+        id: '1',
         name: 'Jan',
         surname: 'Kowalski',
-        id: '1',
-        avatarUrl: 'avatar_url_1'
+        email: 'jan.kowalski@gmail.com',
+        avatarUrl: 'avatar_url_1',
+        country: 'Poland',
+        city: 'Poznan'
       },
       {
         id: '2',
         name: 'Adamus',
         surname: 'Nowakus',
-        avatarUrl: 'avatar_url_3'
+        email: 'adamus.nowakus@gmail.com',
+        avatarUrl: 'avatar_url_3',
+        country: 'France',
+        city: 'Paris'
       }
     ]);
   });
