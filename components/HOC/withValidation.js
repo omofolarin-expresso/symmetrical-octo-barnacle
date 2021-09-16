@@ -1,30 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const withValidation = (Wrapped, validators) => {
-  const t = ({props, onChanged}) => {
-    const err = []
-    const validateOnChange = val => {
+  return class extends Component {
+    state = {errors: []}
+
+    validateOnChange = val => {
       var status = true
-      err.length = 0
+      this.setState({errors: []})
+      
       validators.map(v => {
         const e = v(val)
         if (!e.isValid) {
-          err.push(e.message)
+          this.setState({errors: [...this.state.errors, e.message]})
           status = e.isValid
         }
       })
-      onChanged(val, status)
+      this.props.onChanged(val, status)
     }
-    return (
-      <Wrapped
-        errors={err}
-        validateOnChange={(v) => validateOnChange(v)}
-        onChanged={onChanged}
-        {...props}
-      />
-    )
+    
+    componentDidMount = async () => (await this.loadData())
+  
+    render() {
+        const { errors } = this.state
+        return <Wrapped errors={errors} validateOnChange={this.validateOnChange} {...this.props} />;
+    }
   }
-  return t
 };
 
 export default withValidation;
