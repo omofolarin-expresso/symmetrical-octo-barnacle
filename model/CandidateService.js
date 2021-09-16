@@ -7,8 +7,9 @@ class CandidateService {
   addCandidate = async ({
     name, surname, email, city, country, avatarUrl
   }) => {
-    const candidate = {id: `${this.candidates.length + 1}`, name, surname, email, city, country, avatarUrl}
+    const candidate = {id: `${this.nextId}`, name, surname, email, city, country, avatarUrl}
     this.candidates.push(candidate)
+    this.nextId++
     return candidate
   };
 
