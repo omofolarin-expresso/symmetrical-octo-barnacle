@@ -5,8 +5,8 @@ const withFetching = (Wrapped, Loading, loader) => {
     state = {showLoading: true, data: null}
   
     loadData = async () => {
-        const data = await loader();
-        this.setState({ showLoading: false, data });
+      const data = await loader();
+      this.setState({ showLoading: false, data });
     }
   
     reload = () => this.setState({ showLoading: true }, () => this.loadData())
