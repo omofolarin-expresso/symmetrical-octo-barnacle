@@ -17,8 +17,6 @@ const withValidation = (Wrapped, validators) => {
       })
       this.props.onChanged(val, status)
     }
-    
-    componentDidMount = async () => (await this.loadData())
   
     render() {
         const { errors } = this.state
