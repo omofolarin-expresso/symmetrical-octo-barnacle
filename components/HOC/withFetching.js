@@ -6,7 +6,7 @@ const withFetching = (Wrapped, Loading, loader) => {
   
     loadData = async () => {
       try {
-        const data = await loader();
+        const data = await loader(this.props);
         this.setState({ showLoading: false, data });
       } catch (error) {
         // console.log(error);
