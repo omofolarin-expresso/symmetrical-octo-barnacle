@@ -8,8 +8,15 @@ const maximalLength = length => text => (text.length <= length
 
 const emailRegexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const correctEmail = text => (emailRegexp.test(text.toLowerCase())
-  ? { isValid: true }
-  : { isValid: false, message: 'Not a valid email' });
+// const correctEmail = text => (emailRegexp.test(text.toLowerCase())
+//   ? { isValid: true }
+//   : { isValid: false, message: 'Not a valid email' });
+const correctEmail = text => {
+  if (emailRegexp.test(text.toLowerCase())){
+    return { isValid: true }
+  } else {
+    return { isValid: false, message: 'Not a valid email' }
+  }
+}
 
 export default { maximalLength, minimalLength, correctEmail };

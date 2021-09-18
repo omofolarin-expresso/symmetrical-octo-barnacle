@@ -12,21 +12,19 @@ import CandidateRowItem from '../components/CandidateRowItem';
 class CandidatesListScreen extends React.PureComponent {
   constructor(props) {
     super(props);
-
     const { navigation, payload } = this.props;
-
     navigation.setParams({
       onSubmited: async (candidate) => {
         const added = await service.addCandidate(candidate);
-
         const { candidates } = this.state;
-        this.setState({ candidates: [...candidates, added] });
-
+        if (added){
+          this.setState({ candidates: [...candidates, added] });
+        }
         navigation.goBack();
       }
     });
 
-    this.state = { candidates: payload };
+    this.state = { candidates: payload ? payload : [] };
   }
 
   onUpdated = ({
@@ -53,22 +51,20 @@ class CandidatesListScreen extends React.PureComponent {
   render() {
     const { navigation } = this.props;
     const { candidates } = this.state;
-
     return (
       <View style={styles.container}>
         <FlatList
           data={candidates}
           renderItem={({ item }) => (
             <TouchableWithoutFeedback
-              onPress={() => navigation.navigate('CandidateProfile', { id: item.id, onUpdated: this.onUpdated })
-              }
+              onPress={() => navigation.navigate('CandidateProfile', { id: item.id, onUpdated: this.onUpdated })}
             >
               <View>
                 <CandidateRowItem {...item} />
               </View>
             </TouchableWithoutFeedback>
           )}
-          keyExtractor={({ id }) => id}
+          keyExtractor={({ id }) => id.toString()}
         />
       </View>
     );

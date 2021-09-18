@@ -11,6 +11,7 @@ const CandidateTextInput = ({ validateOnChange, label, value }) => (
       value={value}
       onChangeText={validateOnChange}
       autoCorrect={false}
+      autoCapitalize={'none'}
     />
   </View>
 );

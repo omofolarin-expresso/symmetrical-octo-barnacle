@@ -18,7 +18,7 @@ const SurnameInput = withValidation(CandidateTextInput, [minimalLength(3), maxim
 const EmailInput = withValidation(CandidateTextInput, [
   minimalLength(3),
   correctEmail,
-  maximalLength(20)
+  maximalLength(50)
 ]);
 const CityInput = withValidation(CandidateTextInput, [minimalLength(3), maximalLength(20)]);
 const CountryInput = withValidation(CandidateTextInput, [minimalLength(3), maximalLength(20)]);
@@ -95,7 +95,7 @@ class CandidateProfileInputScreen extends React.PureComponent {
       (p, c) => p && c,
       true
     );
-
+    console.log('isValid', isValid)
     if (isValid) {
       onSubmited(candidate);
       goBack();

@@ -1,6 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
-const CandidateProfileSectionEntry = () => <View />;
+const CandidateProfileSectionEntry = ({ title, info }) => <View>
+    <Text>{title}: {info}</Text>
+</View>;
 
 export default CandidateProfileSectionEntry;
