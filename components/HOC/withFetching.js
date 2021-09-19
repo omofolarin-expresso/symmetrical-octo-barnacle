@@ -1,27 +1,35 @@
 import React from 'react';
 
 const withFetching = (Wrapped, Loading, loader) => (props) => {
-    const [loading, setLoading] = React.useState(false);
+    const [loading, setLoading] = React.useState(true);
     const [payload, setPayload] = React.useState(null);
     React.useEffect(()=>{
         setLoading(true);
-        loader(props)
-        .then((data)=>{
-            console.log('data', data)
-            setPayload(data);
+        (async () => {
+            const data = await loader(props);
             setLoading(false);
-        })
-        .catch(err=>console.log(err));
+            setPayload(data);
+        })();
     }, []);
-    if (loading) {
-        return <Loading />
+    const Load = !payload ? <Loading /> : null;
+    if (!payload && loading) {
+        return Load;
     }
-    return (
-        <Wrapped 
-        {...props}
-        payload={payload}
-        />
-    )
+    if (payload && !loading) {
+        return (
+            <Wrapped 
+            {...props}
+            reload={async ()=>{
+                setLoading(true);
+                const data = await loader(props);
+                setLoading(false);
+                setPayload(data);
+            }}
+            payload={payload}
+            />
+        )
+    }
+    return null;
 };
 
 export default withFetching;

@@ -11,7 +11,6 @@ export default class CandidateProfileScreen extends React.PureComponent {
   constructor(props) {
     super(props);
     const { navigation, payload } = this.props;
-    console.log('payload2', payload)
     navigation.setParams({
       ...payload,
       onSubmited: async (candidate) => {

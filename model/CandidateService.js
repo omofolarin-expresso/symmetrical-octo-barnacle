@@ -1,5 +1,3 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-
 class CandidateService {
   constructor() {
     this.candidates = [];
@@ -11,9 +9,10 @@ class CandidateService {
   }) => {
     try {
       const object = {
-        id: this.nextId, name, surname, email, city, country, avatarUrl
+        id: `${this.nextId}`, name, surname, email, city, country, avatarUrl
       };
-      await AsyncStorage.setItem('candidates', JSON.stringify([...this.candidates, object]))
+      this.candidates = [...this.candidates, object];
+      this.nextId++;
       return object;
     } catch(err){
       console.log(err)
@@ -24,11 +23,10 @@ class CandidateService {
     id, name, surname, email, city, country, avatarUrl
   }) => {
     try {
-      const index = this.candidates.findIndex((candidate) => candidate.id === id && candidate.email === email);
-      if (index === -1) return;
-      this.candidates[index] = { id, name, surname, email, city, country, avatarUrl };
-      await AsyncStorage.setItem('candidates', JSON.stringify(this.candidates))
-      return { id, name, surname, email, city, country, avatarUrl };
+      const object = { id, name, surname, email, city, country, avatarUrl };
+      const index = this.candidates.findIndex((candidate) => candidate.id === id);
+      this.candidates[index] = object;
+      return object;
     } catch(err){
       console.log(err)
     }
@@ -37,7 +35,7 @@ class CandidateService {
   removeCandidate = async (id) => {
     try {
       this.candidates = this.candidates.filter((candidate) => candidate.id !== id);
-      await AsyncStorage.setItem('candidates', JSON.stringify(this.candidates));
+      this.nextId--;
       return;
     } catch(err){
       console.log(err)
@@ -46,8 +44,6 @@ class CandidateService {
 
   fetchCandidates = async () => {
     try {
-      const candidates = await AsyncStorage.getItem('candidates');
-      this.candidates = candidates ? JSON.parse(candidates) : [];
       return this.candidates;
     } catch(err){
       console.log(err)
@@ -56,7 +52,6 @@ class CandidateService {
 
   fetchDetails = async id => {
     try {
-    console.log('this.candidates,', this.candidates)
       const details = this.candidates.find((candidate) => candidate.id === id);
       return details;
     } catch(err){

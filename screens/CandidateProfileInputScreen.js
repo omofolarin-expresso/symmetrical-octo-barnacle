@@ -95,7 +95,6 @@ class CandidateProfileInputScreen extends React.PureComponent {
       (p, c) => p && c,
       true
     );
-    console.log('isValid', isValid)
     if (isValid) {
       onSubmited(candidate);
       goBack();
