@@ -22,12 +22,14 @@ const CandidatesStack = createStackNavigator({
     })
   },
   CandidateProfile: {
-    screen: props => (
-      <CandidateProfileScreenWithLoading
-        {...props}
-        loadingProps={{ text: 'Loading candidate profile...' }}
-      />
-    ),
+    screen: props => {
+      return (
+        <CandidateProfileScreenWithLoading
+          {...props}
+          loadingProps={{ text: 'Loading candidate profile...' }}
+        />
+      )
+    },
     navigationOptions: ({
       navigation: {
         navigate,

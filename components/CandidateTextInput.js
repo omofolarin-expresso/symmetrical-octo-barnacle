@@ -3,7 +3,7 @@ import {
   View, Text, TextInput, StyleSheet
 } from 'react-native';
 
-const CandidateTextInput = ({ validateOnChange, label, value }) => (
+const CandidateTextInput = ({ validateOnChange, label, value, errors }) => (
   <View style={styles.container}>
     <Text style={styles.label}>{`${label}:`}</Text>
     <TextInput
@@ -11,7 +11,9 @@ const CandidateTextInput = ({ validateOnChange, label, value }) => (
       value={value}
       onChangeText={validateOnChange}
       autoCorrect={false}
+      autoCapitalize={'none'}
     />
+    {errors && errors.length > 0 && errors.map((a)=><Text key={a}>{`- ${a}`}</Text>)}
   </View>
 );
 

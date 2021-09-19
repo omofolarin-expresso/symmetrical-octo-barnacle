@@ -1,6 +1,28 @@
-import React from 'react';
-import { View } from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
 
-const CandidateProfileSectionEntry = () => <View />;
+const CandidateProfileSectionEntry = ({ title, info }) => (
+  <View
+    style={{
+      padding: 8,
+    }}
+  >
+    <Text
+      style={{
+        fontSize: 12,
+        fontWeight: "bold",
+      }}
+    >
+      {title+':'}
+    </Text>
+    <Text
+      style={{
+        fontSize: 18,
+      }}
+    >
+      {info}
+    </Text>
+  </View>
+);
 
 export default CandidateProfileSectionEntry;
